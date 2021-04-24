@@ -1702,6 +1702,30 @@ blockquote {
 .cid-svuZKCBuch .container-fluid {
   padding: 0;
 }
+.cid-svv2jY2pNe {
+  background: #ffffff;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.cid-svv2jY2pNe .image-block img {
+  width: 100%;
+  border-radius: 30px;
+}
+@media (max-width: 767px) {
+  .cid-svv2jY2pNe {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .cid-svv2jY2pNe .container {
+    padding: 0 1rem;
+  }
+  .cid-svv2jY2pNe .image-block {
+    width: 100% !important;
+  }
+}
+.cid-svv2jY2pNe .container-fluid {
+  padding: 0;
+}
 .cid-svv26ckUj6 {
   padding-top: 0px;
   padding-bottom: 0px;
@@ -1803,41 +1827,6 @@ blockquote {
   .cid-svv0jasM0B .col-sm-12 {
     padding: 0 !important;
   }
-}
-.cid-svv2e4enOi {
-  padding-top: 0px;
-  padding-bottom: 15px;
-  background-color: #ffffff;
-}
-@media (max-width: 767px) {
-  .cid-svv2e4enOi {
-    padding-top: 0px;
-    padding-bottom: 5px;
-  }
-}
-.cid-svv2jY2pNe {
-  background: #ffffff;
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-.cid-svv2jY2pNe .image-block img {
-  width: 100%;
-  border-radius: 30px;
-}
-@media (max-width: 767px) {
-  .cid-svv2jY2pNe {
-    padding-top: 5px;
-    padding-bottom: 5px;
-  }
-  .cid-svv2jY2pNe .container {
-    padding: 0 1rem;
-  }
-  .cid-svv2jY2pNe .image-block {
-    width: 100% !important;
-  }
-}
-.cid-svv2jY2pNe .container-fluid {
-  padding: 0;
 }
 .cid-svv3bDc1tL {
   padding-top: 0px;

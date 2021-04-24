@@ -1381,6 +1381,46 @@
         {
           "alias": false,
           "_styles": {
+            "background": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            ".image-block": {
+              "img": {
+                "width": "100%",
+                "border-radius": "30px"
+              },
+              "& when (@fullWidth)": {
+                "width": "100% !important"
+              }
+            },
+            "@media (max-width: 767px)": {
+              "padding-top": "(@paddingTop * 5px)",
+              "padding-bottom": "(@paddingBottom * 5px)",
+              ".container": {
+                "padding": "0 1rem"
+              },
+              ".image-block": {
+                "width": "100% !important"
+              }
+            },
+            ".container-fluid": {
+              "padding": "0"
+            }
+          },
+          "_name": "image1",
+          "_sourceTheme": "kidsm4",
+          "_customHTML": "<section group=\"Images & Videos\" class=\"image1 kidsm4_image1\">\n\n\t<mbr-parameters>\n\t\t<!-- Block parameters controls (Blue \"Gear\" panel) -->\n\t\t<header>Size</header>\n\t\t<input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n\n\t\t<input type=\"range\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"15\" value=\"1\" step=\"1\">\n\t\t<input type=\"range\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"15\" value=\"1\" step=\"1\">\n\n\t\t<input type=\"range\" inline title=\"Width\" name=\"imageSize\" min=\"20\" max=\"100\" value=\"100\" step=\"1\" condition=\"fullWidth == false\">\n\t\t<header condition=\"fullWidth == false\">Background</header>\n\t\t<input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\" condition=\"fullWidth == false\">\n\t\t<!-- End block parameters -->\n\t</mbr-parameters>\n\n\t<figure class=\"mbr-figure\" mbr-class=\"{'container-fluid':fullWidth,'container':!fullWidth}\">\n\t\t<div class=\"image-block\" mbr-style=\"{'width':imageSize+'%'}\">\n\t\t\t<img src=\"@PROJECT_PATH@/assets/images/2021-04-24-7.58.11.png\" alt=\"客語選手參加培訓通知單\">\n\t\t</div>\n\t</figure>\n</section>",
+          "_anchor": "image1-o",
+          "_isUserblock": true,
+          "_cid": "svv2jY2pNe",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
             "padding-top": "(@paddingTop * 15px)",
             "padding-bottom": "(@paddingBottom * 15px)",
             "@media (max-width: 767px)": {
@@ -1624,75 +1664,6 @@
               }
             ]
           }
-        },
-        {
-          "alias": false,
-          "_styles": {
-            "padding-top": "(@paddingTop * 15px)",
-            "padding-bottom": "(@paddingBottom * 15px)",
-            "@media (max-width: 767px)": {
-              "padding-top": "(@paddingTop * 5px)",
-              "padding-bottom": "(@paddingBottom * 5px)"
-            },
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)"
-            },
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
-            }
-          },
-          "_name": "title1",
-          "_sourceTheme": "kidsm4",
-          "_customHTML": "<section group=\"Titles\" class=\"title1 kidsm4_title1\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n'mbr-parallax-background': bg.parallax}\">\n\n\t<mbr-parameters>\n\t\t<!-- Block parameters controls (Blue \"Gear\" panel) -->\n\t\t<header>Size</header>\n\t\t<input type=\"range\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"15\" step=\"1\" value=\"0\">\n\t\t<input type=\"range\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"15\" step=\"1\" value=\"1\">\n\t\t<header>Show/Hide</header>\n\t\t<input type=\"checkbox\" title=\"Title\" name=\"showTitle\">\n\t\t<input type=\"checkbox\" title=\"Subtitle\" name=\"showSubTitle\" checked>\n\t\t<select title=\"Align\" name=\"align\">\n\t\t\t<option value=\"1\">Left</option>\n\t\t\t<option value=\"2\" selected>Center</option>\n\t\t\t<option value=\"3\">Right</option>\n\t\t</select>\n\t\t<header>Background</header>\n\t\t<fieldset type=\"background\" name=\"bg\" parallax>\n\t\t\t<input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/children.jpg\" parallax>\n\t\t\t<input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n\t\t\t<input type=\"video\" title=\"Video\" value=\"https://vimeo.com/201169087\">\n\t\t</fieldset>\n\t\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n\t\t<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<!-- End block parameters -->\n\t</mbr-parameters>\n\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay&&bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n\n\t<div class=\"container-fluid\">\n\t\t<div class=\"row\" mbr-class=\"{'justify-content-md-center':align==2, 'justify-content-md-end':align==3}\">\n\t\t\t<div class=\"col-sm-12 col-md-10 col-lg-7 align-center\">\n\t\t\t\t<h2 class=\"mbr-section-title mbr-fonts-style line-bg-warning\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".row > div, .mbr-section-title\">\n\t\t\t\t\tOur Courses\n\t\t\t\t</h2>\n\t\t\t\t<br>\n\t\t\t\t<h3 class=\"mbr-section-subtitle mbr-fonts-style line-bg-primary\" mbr-theme-style=\"display-5\" mbr-if=\"showSubTitle\" data-app-selector=\".row > div, .mbr-section-subtitle\">客語選手參加培訓通知單<br></h3>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>",
-          "_JSplaceholders": [],
-          "_PHPplaceholders": [],
-          "_anchor": "title1-n",
-          "_isUserblock": true,
-          "_cid": "svv2e4enOi",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "alias": false,
-          "_styles": {
-            "background": "@bgColor",
-            "padding-top": "(@paddingTop * 15px)",
-            "padding-bottom": "(@paddingBottom * 15px)",
-            ".image-block": {
-              "img": {
-                "width": "100%",
-                "border-radius": "30px"
-              },
-              "& when (@fullWidth)": {
-                "width": "100% !important"
-              }
-            },
-            "@media (max-width: 767px)": {
-              "padding-top": "(@paddingTop * 5px)",
-              "padding-bottom": "(@paddingBottom * 5px)",
-              ".container": {
-                "padding": "0 1rem"
-              },
-              ".image-block": {
-                "width": "100% !important"
-              }
-            },
-            ".container-fluid": {
-              "padding": "0"
-            }
-          },
-          "_name": "image1",
-          "_sourceTheme": "kidsm4",
-          "_customHTML": "<section group=\"Images & Videos\" class=\"image1 kidsm4_image1\">\n\n\t<mbr-parameters>\n\t\t<!-- Block parameters controls (Blue \"Gear\" panel) -->\n\t\t<header>Size</header>\n\t\t<input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n\n\t\t<input type=\"range\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"15\" value=\"1\" step=\"1\">\n\t\t<input type=\"range\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"15\" value=\"1\" step=\"1\">\n\n\t\t<input type=\"range\" inline title=\"Width\" name=\"imageSize\" min=\"20\" max=\"100\" value=\"100\" step=\"1\" condition=\"fullWidth == false\">\n\t\t<header condition=\"fullWidth == false\">Background</header>\n\t\t<input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\" condition=\"fullWidth == false\">\n\t\t<!-- End block parameters -->\n\t</mbr-parameters>\n\n\t<figure class=\"mbr-figure\" mbr-class=\"{'container-fluid':fullWidth,'container':!fullWidth}\">\n\t\t<div class=\"image-block\" mbr-style=\"{'width':imageSize+'%'}\">\n\t\t\t<img src=\"@PROJECT_PATH@/assets/images/2021-04-24-7.58.11.png\" alt=\"客語選手參加培訓通知單\">\n\t\t</div>\n\t</figure>\n</section>",
-          "_anchor": "image1-o",
-          "_isUserblock": true,
-          "_cid": "svv2jY2pNe",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
         },
         {
           "alias": false,
