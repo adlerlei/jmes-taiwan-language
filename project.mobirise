@@ -47,7 +47,7 @@
     "versionPublish": "5.3.5",
     "chatbutton": {},
     "favicon": false,
-    "mbrsiteDomain": "8n2l9hujjh",
+    "mbrsiteDomain": "zioty4pcbt",
     "imageResize": false,
     "cssOptimize": false,
     "lazyLoad": false,
@@ -1386,6 +1386,147 @@
           "_anchor": "image1-o",
           "_isUserblock": true,
           "_cid": "svv2jY2pNe",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "@media (max-width: 767px)": {
+              "padding-top": "(@paddingTop * 5px)",
+              "padding-bottom": "(@paddingBottom * 5px)"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            }
+          },
+          "_name": "title1",
+          "_sourceTheme": "kidsm4",
+          "_customHTML": "<section group=\"Titles\" class=\"title1 kidsm4_title1\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n'mbr-parallax-background': bg.parallax}\">\n\n\t<mbr-parameters>\n\t\t<!-- Block parameters controls (Blue \"Gear\" panel) -->\n\t\t<header>Size</header>\n\t\t<input type=\"range\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"15\" step=\"1\" value=\"0\">\n\t\t<input type=\"range\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"15\" step=\"1\" value=\"1\">\n\t\t<header>Show/Hide</header>\n\t\t<input type=\"checkbox\" title=\"Title\" name=\"showTitle\">\n\t\t<input type=\"checkbox\" title=\"Subtitle\" name=\"showSubTitle\" checked>\n\t\t<select title=\"Align\" name=\"align\">\n\t\t\t<option value=\"1\">Left</option>\n\t\t\t<option value=\"2\" selected>Center</option>\n\t\t\t<option value=\"3\">Right</option>\n\t\t</select>\n\t\t<header>Background</header>\n\t\t<fieldset type=\"background\" name=\"bg\" parallax>\n\t\t\t<input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/children.jpg\" parallax>\n\t\t\t<input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n\t\t\t<input type=\"video\" title=\"Video\" value=\"https://vimeo.com/201169087\">\n\t\t</fieldset>\n\t\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n\t\t<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<!-- End block parameters -->\n\t</mbr-parameters>\n\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay&&bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n\n\t<div class=\"container-fluid\">\n\t\t<div class=\"row\" mbr-class=\"{'justify-content-md-center':align==2, 'justify-content-md-end':align==3}\">\n\t\t\t<div class=\"col-sm-12 col-md-10 col-lg-7 align-center\">\n\t\t\t\t<h2 class=\"mbr-section-title mbr-fonts-style line-bg-warning\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".row > div, .mbr-section-title\">\n\t\t\t\t\tOur Courses\n\t\t\t\t</h2>\n\t\t\t\t<br>\n\t\t\t\t<h3 class=\"mbr-section-subtitle mbr-fonts-style line-bg-primary\" mbr-theme-style=\"display-5\" mbr-if=\"showSubTitle\" data-app-selector=\".row > div, .mbr-section-subtitle\">語文競賽師生練習情形<br></h3>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>",
+          "_JSplaceholders": [],
+          "_PHPplaceholders": [],
+          "_anchor": "title1-22",
+          "_isUserblock": true,
+          "_cid": "svw2tAQlMH",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".container-fluid": {
+              "padding": "0 1.5rem",
+              "max-width": "1200px"
+            },
+            ".title": {
+              "max-width": "800px",
+              "margin": "auto"
+            },
+            ".photo": {
+              "position": "relative",
+              "margin-bottom": "2rem",
+              "img": {
+                "width": "100%",
+                "object-fit": "cover",
+                "border-radius": "30px"
+              },
+              ".btn-min": {
+                "position": "absolute",
+                "padding": "0 0.6rem",
+                "border-radius": "5px",
+                "bottom": "20px",
+                "left": "20px",
+                "line-height": "1.5",
+                "margin-left": "0.5rem"
+              },
+              "&:hover .btn-primary": {
+                "color": "#ffffff !important",
+                "background-color": "@secondaryColor !important",
+                "border-color": "@secondaryColor !important"
+              }
+            },
+            ".card__title": {
+              "color": "#12265a",
+              "margin-top": "0.8rem"
+            },
+            ".mbr-text": {
+              "color": "#45b3df",
+              "display": "inline"
+            },
+            ".span2::before": {
+              "content": "''",
+              "margin": "0 10px 0 9px",
+              "display": "inline-block",
+              "width": "5px",
+              "height": "5px",
+              "vertical-align": "middle",
+              "margin-top": "-2.5px",
+              "border-radius": "50%",
+              "background": "currentColor"
+            },
+            ".link-card": {
+              "transition": "all 0.3s",
+              "color": "#45b3df",
+              "text-decoration": "underline",
+              "font-weight": "400",
+              "&:hover": {
+                "color": "@warningColor"
+              }
+            },
+            ".mbr-section-btn2": {
+              "display": "inline-flex"
+            },
+            ".mbr-section-btn2:hover .icon-btn": {
+              "transform": "rotateZ(180deg)"
+            },
+            ".btn-underline": {
+              "display": "flex",
+              "align-items": "center",
+              "margin": "0.3rem .8rem 0",
+              "font-weight": "700"
+            },
+            ".icon-btn": {
+              "color": "@warningColor",
+              "transition": "all 0.3s",
+              "margin-left": "1rem",
+              "line-height": "0"
+            },
+            "@media (max-width: 991px)": {
+              ".md-pb": {
+                "margin-bottom": "2rem !important"
+              }
+            },
+            "@media (max-width: 767px)": {
+              "padding-top": "(@paddingTop * 5px)",
+              "padding-bottom": "(@paddingBottom * 5px)",
+              ".container-fluid": {
+                "padding": "0 1rem"
+              }
+            }
+          },
+          "_name": "features3",
+          "_sourceTheme": "kidsm4",
+          "_customHTML": "<section class=\"features3 kidsm4_features3\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\" plugins>\n\n\t<mbr-parameters>\n\t\t<!-- Block parameters controls (Blue \"Gear\" panel) -->\n\t\t<header>Size</header>\n\t\t<input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"15\" step=\"1\" value=\"0\">\n\t\t<input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"15\" step=\"1\" value=\"0\">\n\t\t<select title=\"Cards Count\" name=\"TestimonialsCount\">\n\t\t\t<option value=\"1\">1</option>\n\t\t\t<option value=\"2\">2</option>\n\t\t\t<option value=\"3\" selected>3</option>\n\t\t</select>\n\t\t<header>Show/Hide</header>\n\t\t<input type=\"checkbox\" title=\"Title\" name=\"showTitle\">\n\t\t<input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n\t\t<input type=\"checkbox\" title=\"Images\" name=\"showImages\" checked>\n\t\t<input type=\"checkbox\" title=\"Image Button\" name=\"showButton\" checked>\n\t\t<input type=\"checkbox\" title=\"Card Text 1\" name=\"showText1\">\n\t\t<input type=\"checkbox\" title=\"Card Text 2\" name=\"showText2\">\n\t\t<input type=\"checkbox\" title=\"Card Title\" name=\"cardTitle\">\n\t\t<input type=\"checkbox\" title=\"Card Links\" name=\"showlinks\">\n\t\t<header>Background</header>\n\t\t<fieldset type=\"background\" name=\"bg\" parallax>\n\t\t\t<input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/children.jpg\">\n\t\t\t<input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n\t\t\t<input type=\"video\" title=\"Video\" value=\"https://vimeo.com/201169087\">\n\t\t</fieldset>\n\t\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n\t\t<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#efefef\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<!-- End block parameters -->\n\t</mbr-parameters>\n\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n\n\t<div class=\"container-fluid\">\n\t\t<div class=\"row\">\n\t\t\t<div class=\"title col-12 pb-4 align-center\" mbr-if=\"showTitle || showSubtitle\">\n\t\t\t\t<h2 class=\"mbr-section-title pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">\n\t\t\t\t\tHandmade Wood Products\n\t\t\t\t</h2>\n\t\t\t\t<h3 class=\"mbr-section-subtitle pb-3 mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">\n\t\t\t\t\tLorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare risus vel tellus tempor\n\t\t\t\t\ttempor. Suspendisse ut lobortis sem,\n\t\t\t\t\taliquam consequat nisi.\n\t\t\t\t</h3>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"row justify-content-lg-center\">\n\t\t\t<div class=\"card col-12 col-md-6 md-pb\" mbr-class=\"{'col-lg-4': TestimonialsCount > 2 }\">\n\t\t\t\t<div class=\"card-block\">\n\t\t\t\t\t<div class=\"photo\" mbr-if=\"showImages\">\n\t\t\t\t\t\t<img src=\"@PROJECT_PATH@/assets/images/2021-04-25-12.02.54.png\" alt>\n\t\t\t\t\t\t<div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButton\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-min btn-primary\" href=\"#\" data-app-placeholder=\"Type Text\">師生練習</a></div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"text-wrap\">\n\t\t\t\t\t\t<p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".text-wrap, .mbr-text\" mbr-if=\"showText1\">\n\t\t\t\t\t\t\tNovember 19, 2025\n\t\t\t\t\t\t</p>\n\t\t\t\t\t\t<p class=\"mbr-text mbr-fonts-style span2\" mbr-theme-style=\"display-7\" data-app-selector=\".text-wrap, .mbr-text\" mbr-if=\"showText2\">\n\t\t\t\t\t\t\tBy <a class=\"link-card\" href>Developers</a>\n\t\t\t\t\t\t</p>\n\t\t\t\t\t\t<h4 class=\"card__title mbr-bold mbr-fonts-style\" data-app-selector=\".card__title, .link-wrap\" mbr-theme-style=\"display-5\" mbr-if=\"cardTitle\">\n\t\t\t\t\t\t\tOrienteering\n\t\t\t\t\t\t</h4>\n\t\t\t\t\t\t<div class=\"link-wrap pt-2\" mbr-if=\"showlinks\">\n\t\t\t\t\t\t\t<div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn mbr-section-btn2\" data-toolbar=\"-mbrBtnMove\">\n\t\t\t\t\t\t\t\t<a class=\"btn-underline text-warning\" href=\"#\" data-app-placeholder=\"Type Text\">Read\n\t\t\t\t\t\t\t\t\tMore<span class=\"icon-btn mbri-star mbr-iconfont mbr-iconfont-btn\"></span></a>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\n\t\t\t<div class=\"card col-12 col-md-6 md-pb\" mbr-class=\"{'col-lg-4': TestimonialsCount > 2 }\" mbr-if=\"TestimonialsCount>1\">\n\t\t\t\t<div class=\"card-block\">\n\t\t\t\t\t<div class=\"photo\" mbr-if=\"showImages\">\n\t\t\t\t\t\t<img src=\"@PROJECT_PATH@/assets/images/2021-04-25-12.03.04.png\" alt>\n\t\t\t\t\t\t<div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButton\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-min btn-primary\" href=\"#\" data-app-placeholder=\"Type Text\">師生練習</a></div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"text-wrap\">\n\t\t\t\t\t\t<p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".text-wrap, .mbr-text\" mbr-if=\"showText1\">\n\t\t\t\t\t\t\tNovember 19, 2025\n\t\t\t\t\t\t</p>\n\t\t\t\t\t\t<p class=\"mbr-text mbr-fonts-style span2\" mbr-theme-style=\"display-7\" data-app-selector=\".text-wrap, .mbr-text\" mbr-if=\"showText2\">\n\t\t\t\t\t\t\tBy <a class=\"link-card\" href>Developers</a>\n\t\t\t\t\t\t</p>\n\t\t\t\t\t\t<h4 class=\"card__title mbr-bold mbr-fonts-style\" data-app-selector=\".card__title, .link-wrap\" mbr-theme-style=\"display-5\" mbr-if=\"cardTitle\">\n\t\t\t\t\t\t\tOutdoor Activity\n\t\t\t\t\t\t</h4>\n\t\t\t\t\t\t<div class=\"link-wrap pt-2\" mbr-if=\"showlinks\">\n\t\t\t\t\t\t\t<div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn mbr-section-btn2\" data-toolbar=\"-mbrBtnMove\">\n\t\t\t\t\t\t\t\t<a class=\"btn-underline text-warning\" href=\"#\" data-app-placeholder=\"Type Text\">Read\n\t\t\t\t\t\t\t\t\tMore<span class=\"icon-btn mbri-star mbr-iconfont mbr-iconfont-btn\"></span></a>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\n\t\t\t<div class=\"card col-12 col-md-6 md-pb\" mbr-class=\"{'col-lg-4': TestimonialsCount > 2 }\" mbr-if=\"TestimonialsCount>2\">\n\t\t\t\t<div class=\"card-block\">\n\t\t\t\t\t<div class=\"photo\" mbr-if=\"showImages\">\n\t\t\t\t\t\t<img src=\"@PROJECT_PATH@/assets/images/2021-04-25-12.03.13.png\" alt>\n\t\t\t\t\t\t<div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButton\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-min btn-primary\" href=\"#\" data-app-placeholder=\"Type Text\">師生練習</a></div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"text-wrap\">\n\t\t\t\t\t\t<p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".text-wrap, .mbr-text\" mbr-if=\"showText1\">\n\t\t\t\t\t\t\tNovember 19, 2025\n\t\t\t\t\t\t</p>\n\t\t\t\t\t\t<p class=\"mbr-text mbr-fonts-style span2\" mbr-theme-style=\"display-7\" data-app-selector=\".text-wrap, .mbr-text\" mbr-if=\"showText2\">\n\t\t\t\t\t\t\tBy <a class=\"link-card\" href>Developers</a>\n\t\t\t\t\t\t</p>\n\t\t\t\t\t\t<h4 class=\"card__title mbr-bold mbr-fonts-style\" data-app-selector=\".card__title, .link-wrap\" mbr-theme-style=\"display-5\" mbr-if=\"cardTitle\">\n\t\t\t\t\t\t\tDrawing Course\n\t\t\t\t\t\t</h4>\n\t\t\t\t\t\t<div class=\"link-wrap pt-2\" mbr-if=\"showlinks\">\n\t\t\t\t\t\t\t<div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn mbr-section-btn2\" data-toolbar=\"-mbrBtnMove\">\n\t\t\t\t\t\t\t\t<a class=\"btn-underline text-warning\" href=\"#\" data-app-placeholder=\"Type Text\">Read\n\t\t\t\t\t\t\t\t\tMore<span class=\"icon-btn mbri-star mbr-iconfont mbr-iconfont-btn\"></span></a>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>",
+          "_anchor": "features3-23",
+          "_isUserblock": true,
+          "_cid": "svw2JPrGBu",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
@@ -4486,147 +4627,6 @@
           "_anchor": "table2-21",
           "_isUserblock": true,
           "_cid": "svw2cushPO",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "alias": false,
-          "_styles": {
-            "padding-top": "(@paddingTop * 15px)",
-            "padding-bottom": "(@paddingBottom * 15px)",
-            "@media (max-width: 767px)": {
-              "padding-top": "(@paddingTop * 5px)",
-              "padding-bottom": "(@paddingBottom * 5px)"
-            },
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)"
-            },
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
-            }
-          },
-          "_name": "title1",
-          "_sourceTheme": "kidsm4",
-          "_customHTML": "<section group=\"Titles\" class=\"title1 kidsm4_title1\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n'mbr-parallax-background': bg.parallax}\">\n\n\t<mbr-parameters>\n\t\t<!-- Block parameters controls (Blue \"Gear\" panel) -->\n\t\t<header>Size</header>\n\t\t<input type=\"range\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"15\" step=\"1\" value=\"0\">\n\t\t<input type=\"range\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"15\" step=\"1\" value=\"1\">\n\t\t<header>Show/Hide</header>\n\t\t<input type=\"checkbox\" title=\"Title\" name=\"showTitle\">\n\t\t<input type=\"checkbox\" title=\"Subtitle\" name=\"showSubTitle\" checked>\n\t\t<select title=\"Align\" name=\"align\">\n\t\t\t<option value=\"1\">Left</option>\n\t\t\t<option value=\"2\" selected>Center</option>\n\t\t\t<option value=\"3\">Right</option>\n\t\t</select>\n\t\t<header>Background</header>\n\t\t<fieldset type=\"background\" name=\"bg\" parallax>\n\t\t\t<input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/children.jpg\" parallax>\n\t\t\t<input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n\t\t\t<input type=\"video\" title=\"Video\" value=\"https://vimeo.com/201169087\">\n\t\t</fieldset>\n\t\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n\t\t<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<!-- End block parameters -->\n\t</mbr-parameters>\n\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay&&bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n\n\t<div class=\"container-fluid\">\n\t\t<div class=\"row\" mbr-class=\"{'justify-content-md-center':align==2, 'justify-content-md-end':align==3}\">\n\t\t\t<div class=\"col-sm-12 col-md-10 col-lg-7 align-center\">\n\t\t\t\t<h2 class=\"mbr-section-title mbr-fonts-style line-bg-warning\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".row > div, .mbr-section-title\">\n\t\t\t\t\tOur Courses\n\t\t\t\t</h2>\n\t\t\t\t<br>\n\t\t\t\t<h3 class=\"mbr-section-subtitle mbr-fonts-style line-bg-primary\" mbr-theme-style=\"display-5\" mbr-if=\"showSubTitle\" data-app-selector=\".row > div, .mbr-section-subtitle\">語文競賽師生練習情形<br></h3>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>",
-          "_JSplaceholders": [],
-          "_PHPplaceholders": [],
-          "_anchor": "title1-22",
-          "_isUserblock": true,
-          "_cid": "svw2tAQlMH",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "alias": false,
-          "_styles": {
-            "padding-top": "(@paddingTop * 15px)",
-            "padding-bottom": "(@paddingBottom * 15px)",
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
-            },
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)"
-            },
-            ".container-fluid": {
-              "padding": "0 1.5rem",
-              "max-width": "1200px"
-            },
-            ".title": {
-              "max-width": "800px",
-              "margin": "auto"
-            },
-            ".photo": {
-              "position": "relative",
-              "margin-bottom": "2rem",
-              "img": {
-                "width": "100%",
-                "object-fit": "cover",
-                "border-radius": "30px"
-              },
-              ".btn-min": {
-                "position": "absolute",
-                "padding": "0 0.6rem",
-                "border-radius": "5px",
-                "bottom": "20px",
-                "left": "20px",
-                "line-height": "1.5",
-                "margin-left": "0.5rem"
-              },
-              "&:hover .btn-primary": {
-                "color": "#ffffff !important",
-                "background-color": "@secondaryColor !important",
-                "border-color": "@secondaryColor !important"
-              }
-            },
-            ".card__title": {
-              "color": "#12265a",
-              "margin-top": "0.8rem"
-            },
-            ".mbr-text": {
-              "color": "#45b3df",
-              "display": "inline"
-            },
-            ".span2::before": {
-              "content": "''",
-              "margin": "0 10px 0 9px",
-              "display": "inline-block",
-              "width": "5px",
-              "height": "5px",
-              "vertical-align": "middle",
-              "margin-top": "-2.5px",
-              "border-radius": "50%",
-              "background": "currentColor"
-            },
-            ".link-card": {
-              "transition": "all 0.3s",
-              "color": "#45b3df",
-              "text-decoration": "underline",
-              "font-weight": "400",
-              "&:hover": {
-                "color": "@warningColor"
-              }
-            },
-            ".mbr-section-btn2": {
-              "display": "inline-flex"
-            },
-            ".mbr-section-btn2:hover .icon-btn": {
-              "transform": "rotateZ(180deg)"
-            },
-            ".btn-underline": {
-              "display": "flex",
-              "align-items": "center",
-              "margin": "0.3rem .8rem 0",
-              "font-weight": "700"
-            },
-            ".icon-btn": {
-              "color": "@warningColor",
-              "transition": "all 0.3s",
-              "margin-left": "1rem",
-              "line-height": "0"
-            },
-            "@media (max-width: 991px)": {
-              ".md-pb": {
-                "margin-bottom": "2rem !important"
-              }
-            },
-            "@media (max-width: 767px)": {
-              "padding-top": "(@paddingTop * 5px)",
-              "padding-bottom": "(@paddingBottom * 5px)",
-              ".container-fluid": {
-                "padding": "0 1rem"
-              }
-            }
-          },
-          "_name": "features3",
-          "_sourceTheme": "kidsm4",
-          "_customHTML": "<section class=\"features3 kidsm4_features3\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\" plugins>\n\n\t<mbr-parameters>\n\t\t<!-- Block parameters controls (Blue \"Gear\" panel) -->\n\t\t<header>Size</header>\n\t\t<input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"15\" step=\"1\" value=\"0\">\n\t\t<input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"15\" step=\"1\" value=\"0\">\n\t\t<select title=\"Cards Count\" name=\"TestimonialsCount\">\n\t\t\t<option value=\"1\">1</option>\n\t\t\t<option value=\"2\">2</option>\n\t\t\t<option value=\"3\" selected>3</option>\n\t\t</select>\n\t\t<header>Show/Hide</header>\n\t\t<input type=\"checkbox\" title=\"Title\" name=\"showTitle\">\n\t\t<input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n\t\t<input type=\"checkbox\" title=\"Images\" name=\"showImages\" checked>\n\t\t<input type=\"checkbox\" title=\"Image Button\" name=\"showButton\" checked>\n\t\t<input type=\"checkbox\" title=\"Card Text 1\" name=\"showText1\">\n\t\t<input type=\"checkbox\" title=\"Card Text 2\" name=\"showText2\">\n\t\t<input type=\"checkbox\" title=\"Card Title\" name=\"cardTitle\">\n\t\t<input type=\"checkbox\" title=\"Card Links\" name=\"showlinks\">\n\t\t<header>Background</header>\n\t\t<fieldset type=\"background\" name=\"bg\" parallax>\n\t\t\t<input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/children.jpg\">\n\t\t\t<input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n\t\t\t<input type=\"video\" title=\"Video\" value=\"https://vimeo.com/201169087\">\n\t\t</fieldset>\n\t\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n\t\t<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#efefef\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<!-- End block parameters -->\n\t</mbr-parameters>\n\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n\n\t<div class=\"container-fluid\">\n\t\t<div class=\"row\">\n\t\t\t<div class=\"title col-12 pb-4 align-center\" mbr-if=\"showTitle || showSubtitle\">\n\t\t\t\t<h2 class=\"mbr-section-title pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">\n\t\t\t\t\tHandmade Wood Products\n\t\t\t\t</h2>\n\t\t\t\t<h3 class=\"mbr-section-subtitle pb-3 mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">\n\t\t\t\t\tLorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare risus vel tellus tempor\n\t\t\t\t\ttempor. Suspendisse ut lobortis sem,\n\t\t\t\t\taliquam consequat nisi.\n\t\t\t\t</h3>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"row justify-content-lg-center\">\n\t\t\t<div class=\"card col-12 col-md-6 md-pb\" mbr-class=\"{'col-lg-4': TestimonialsCount > 2 }\">\n\t\t\t\t<div class=\"card-block\">\n\t\t\t\t\t<div class=\"photo\" mbr-if=\"showImages\">\n\t\t\t\t\t\t<img src=\"@PROJECT_PATH@/assets/images/2021-04-25-12.02.54.png\" alt>\n\t\t\t\t\t\t<div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButton\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-min btn-primary\" href=\"#\" data-app-placeholder=\"Type Text\">師生練習</a></div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"text-wrap\">\n\t\t\t\t\t\t<p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".text-wrap, .mbr-text\" mbr-if=\"showText1\">\n\t\t\t\t\t\t\tNovember 19, 2025\n\t\t\t\t\t\t</p>\n\t\t\t\t\t\t<p class=\"mbr-text mbr-fonts-style span2\" mbr-theme-style=\"display-7\" data-app-selector=\".text-wrap, .mbr-text\" mbr-if=\"showText2\">\n\t\t\t\t\t\t\tBy <a class=\"link-card\" href>Developers</a>\n\t\t\t\t\t\t</p>\n\t\t\t\t\t\t<h4 class=\"card__title mbr-bold mbr-fonts-style\" data-app-selector=\".card__title, .link-wrap\" mbr-theme-style=\"display-5\" mbr-if=\"cardTitle\">\n\t\t\t\t\t\t\tOrienteering\n\t\t\t\t\t\t</h4>\n\t\t\t\t\t\t<div class=\"link-wrap pt-2\" mbr-if=\"showlinks\">\n\t\t\t\t\t\t\t<div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn mbr-section-btn2\" data-toolbar=\"-mbrBtnMove\">\n\t\t\t\t\t\t\t\t<a class=\"btn-underline text-warning\" href=\"#\" data-app-placeholder=\"Type Text\">Read\n\t\t\t\t\t\t\t\t\tMore<span class=\"icon-btn mbri-star mbr-iconfont mbr-iconfont-btn\"></span></a>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\n\t\t\t<div class=\"card col-12 col-md-6 md-pb\" mbr-class=\"{'col-lg-4': TestimonialsCount > 2 }\" mbr-if=\"TestimonialsCount>1\">\n\t\t\t\t<div class=\"card-block\">\n\t\t\t\t\t<div class=\"photo\" mbr-if=\"showImages\">\n\t\t\t\t\t\t<img src=\"@PROJECT_PATH@/assets/images/2021-04-25-12.03.04.png\" alt>\n\t\t\t\t\t\t<div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButton\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-min btn-primary\" href=\"#\" data-app-placeholder=\"Type Text\">師生練習</a></div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"text-wrap\">\n\t\t\t\t\t\t<p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".text-wrap, .mbr-text\" mbr-if=\"showText1\">\n\t\t\t\t\t\t\tNovember 19, 2025\n\t\t\t\t\t\t</p>\n\t\t\t\t\t\t<p class=\"mbr-text mbr-fonts-style span2\" mbr-theme-style=\"display-7\" data-app-selector=\".text-wrap, .mbr-text\" mbr-if=\"showText2\">\n\t\t\t\t\t\t\tBy <a class=\"link-card\" href>Developers</a>\n\t\t\t\t\t\t</p>\n\t\t\t\t\t\t<h4 class=\"card__title mbr-bold mbr-fonts-style\" data-app-selector=\".card__title, .link-wrap\" mbr-theme-style=\"display-5\" mbr-if=\"cardTitle\">\n\t\t\t\t\t\t\tOutdoor Activity\n\t\t\t\t\t\t</h4>\n\t\t\t\t\t\t<div class=\"link-wrap pt-2\" mbr-if=\"showlinks\">\n\t\t\t\t\t\t\t<div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn mbr-section-btn2\" data-toolbar=\"-mbrBtnMove\">\n\t\t\t\t\t\t\t\t<a class=\"btn-underline text-warning\" href=\"#\" data-app-placeholder=\"Type Text\">Read\n\t\t\t\t\t\t\t\t\tMore<span class=\"icon-btn mbri-star mbr-iconfont mbr-iconfont-btn\"></span></a>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\n\t\t\t<div class=\"card col-12 col-md-6 md-pb\" mbr-class=\"{'col-lg-4': TestimonialsCount > 2 }\" mbr-if=\"TestimonialsCount>2\">\n\t\t\t\t<div class=\"card-block\">\n\t\t\t\t\t<div class=\"photo\" mbr-if=\"showImages\">\n\t\t\t\t\t\t<img src=\"@PROJECT_PATH@/assets/images/2021-04-25-12.03.13.png\" alt>\n\t\t\t\t\t\t<div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButton\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-min btn-primary\" href=\"#\" data-app-placeholder=\"Type Text\">師生練習</a></div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"text-wrap\">\n\t\t\t\t\t\t<p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".text-wrap, .mbr-text\" mbr-if=\"showText1\">\n\t\t\t\t\t\t\tNovember 19, 2025\n\t\t\t\t\t\t</p>\n\t\t\t\t\t\t<p class=\"mbr-text mbr-fonts-style span2\" mbr-theme-style=\"display-7\" data-app-selector=\".text-wrap, .mbr-text\" mbr-if=\"showText2\">\n\t\t\t\t\t\t\tBy <a class=\"link-card\" href>Developers</a>\n\t\t\t\t\t\t</p>\n\t\t\t\t\t\t<h4 class=\"card__title mbr-bold mbr-fonts-style\" data-app-selector=\".card__title, .link-wrap\" mbr-theme-style=\"display-5\" mbr-if=\"cardTitle\">\n\t\t\t\t\t\t\tDrawing Course\n\t\t\t\t\t\t</h4>\n\t\t\t\t\t\t<div class=\"link-wrap pt-2\" mbr-if=\"showlinks\">\n\t\t\t\t\t\t\t<div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn mbr-section-btn2\" data-toolbar=\"-mbrBtnMove\">\n\t\t\t\t\t\t\t\t<a class=\"btn-underline text-warning\" href=\"#\" data-app-placeholder=\"Type Text\">Read\n\t\t\t\t\t\t\t\t\tMore<span class=\"icon-btn mbri-star mbr-iconfont mbr-iconfont-btn\"></span></a>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>",
-          "_anchor": "features3-23",
-          "_isUserblock": true,
-          "_cid": "svw2JPrGBu",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
