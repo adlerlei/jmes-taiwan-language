@@ -47,7 +47,7 @@
     "versionPublish": "5.3.5",
     "chatbutton": {},
     "favicon": false,
-    "mbrsiteDomain": "vbbyzi2um9",
+    "mbrsiteDomain": "8n2l9hujjh",
     "imageResize": false,
     "cssOptimize": false,
     "lazyLoad": false,
@@ -898,7 +898,7 @@
             ".image-block": {
               "img": {
                 "margin": "auto",
-                "width": "80%",
+                "width": "60%",
                 "border-radius": "30px"
               },
               "& when (@fullWidth)": {
